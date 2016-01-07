@@ -3,7 +3,7 @@ development:
     default:
       database: cs_comments_service_dev
       hosts:
-        - localhost:27017
+        - <%= ENV['DISSCUSS_MONGODB_HOST'] %>:<%=ENV['DISSCUSS_MONGODB_PORT'] %>
 test:
   sessions:
     default:

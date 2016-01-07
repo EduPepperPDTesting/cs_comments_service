@@ -7,5 +7,5 @@ cache_timeout:
   threads_query: 10
 max_deep_search_comment_count: 5000
 es_index:
-  comment_thread: comment_thread_dev 
-  comment: comment_dev
+  comment_thread: <%= ENV['ES_INDEX_COMMENT_THREAD'] %>
+  comment: <%= ENV['ES_INDEX_COMMENT'] %>
